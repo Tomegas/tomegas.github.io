@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styl.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <header>
+         <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+               >&times;</a
+            >
+
+            <div class="overlay-content">
+               <a href="/index.html">Home</a>
+               <a href="/o-nas/About.html">About</a>
+               <a href="/galerie/galerie.html">Galerie</a>
+               <a href="/Kontakt/contact.html">Contact</a>
+            </div>
+         </div>
+         <img class="logo" src="obrazky/mountains.png" alt="" height="45" />
+         <span onclick="openNav()"
+            ><img src="obrazky/menu.png" alt="" height="50"
+         /></span>
+      </header>
+      <div class="center">
+         <iframe
+            class="ytb"
+            src="https://www.youtube.com/watch?v=XznTHeUkGXA"
+            frameborder="0"></iframe>
+         <div class="name">Tomáš Gross</div>
+      </div>
+
+      <footer>
+         <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'xbox')">
+               Xbox
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'PlayStation')">
+               PlayStation
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'PC')">PC</button>
+         </div>
+
+         <div id="xbox" class="tabcontent">
+            <h3>Xbox</h3>
+            <p>London is the capital city of England.</p>
+         </div>
+
+         <div id="PlayStation" class="tabcontent">
+            <h3>PlayStation</h3>
+            <p>Paris is the capital of France.</p>
+         </div>
+
+         <div id="PC" class="tabcontent">
+            <h3>PC</h3>
+            <p>Tokyo is the capital of Japan.</p>
+         </div>
+      </footer>
+      <script src="script.js"></script>
+   </body>
+</html>
