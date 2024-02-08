@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styl.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
+      <script src="script.js"></script>
+      <title>Document</title>
+   </head>
+   <body>
+      <header>
+         <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+               >&times;</a
+            >
+
+            <div class="overlay-content">
+               <a href="/index.html">Home</a>
+               <a href="#">Services</a>
+               <a href="#">Galerie</a>
+               <a href="#">Contact</a>
+            </div>
+         </div>
+         <a href="/index.html"
+            ><img class="logo" src="obrazky/mountains.png" alt="" height="45"
+         /></a>
+         <span onclick="openNav()"
+            ><img src="obrazky/menu.png" alt="" height="50"
+         /></span>
+      </header>
+      <h1 class="gs2">Galerie 1</h1>
+      <div class="gallery">
+         <a href="obrazky/img1.jpeg">
+            <img src="obrazky/img1.jpeg" alt="" />
+         </a>
+
+         <a href="obrazky/img2.webp">
+            <img src="obrazky/img2.webp" alt="" />
+         </a>
+
+         <a href="obrazky/img3.jpg">
+            <img src="obrazky/img3.jpg" alt="" />
+         </a>
+
+         <a href="obrazky/img4.webp">
+            <img src="obrazky/img4.webp" alt="" />
+         </a>
+
+         <a href="obrazky/img4.webp">
+            <img src="obrazky/img4.webp" alt="" />
+         </a>
+
+         <a href="obrazky/img4.webp">
+            <img src="obrazky/img4.webp" alt="" />
+         </a>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+         <script>
+            lightGallery(document.querySelector(".gallery"));
+         </script>
+      </div>
+      <h1 class="gs2">Galerie 2</h1>
+      <div class="gallery">
+         <a href="obrazky/img1.jpeg">
+            <img src="obrazky/img1.jpeg" alt="" />
+         </a>
+
+         <a href="obrazky/img2.webp">
+            <img src="obrazky/img2.webp" alt="" />
+         </a>
+
+         <a href="obrazky/img3.jpg">
+            <img src="obrazky/img3.jpg" alt="" />
+         </a>
+
+         <a href="obrazky/img4.webp">
+            <img src="obrazky/img4.webp" alt="" />
+         </a>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+         <script>
+            lightGallery(document.querySelector(".gallery"));
+         </script>
+      </div>
+   </body>
+</html>
