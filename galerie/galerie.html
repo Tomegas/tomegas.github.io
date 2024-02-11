@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styl.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+          
+        <ul class="sidebar">
+            <img class="hideOnMobile" src="obrazky/mountains.png" alt="">
+            <li onclick=hideSidebar()><a href="#"><svg class="brgr"  xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="/tgss-master/index.html">Home</a></li>
+            <li><a href="/tgss-master/galerie/galerie.html">Gallery</a></li>
+            <li><a href="/tgss-master/o-nas/About.html">About</a></li>
+            <li><a href="/tgss-master/Kontakt/contact.html">Contacts</a></li>
+  
+        </ul>
+        <ul>
+           
+            <li><a href="/tgss-master/index.html"><img class="logo" src="obrazky/mountains.png" alt=""></a></li>
+            <li class="hideOnMobile"><a href="/tgss-master/index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="/tgss-master/galerie/galerie.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="/tgss-master/o-nas/About.html">About</a></li>
+            <li class="hideOnMobile"><a href="/tgss-master/Kontakt/contact.html">Contacts</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+  
+  
+  
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')  
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')  
+            sidebar.style.display = 'none'
+        }
+    </script>
+  </div>
+  </header>
+    <h1 class="gs2">Galerie 1</h1>
+    <div class="gallery">
+      <a href="obrazky/img1.jpeg">
+        <img src="obrazky/img1.jpeg" alt="" />
+      </a>
+
+      <a href="obrazky/img2.webp">
+        <img src="obrazky/img2.webp" alt="" />
+      </a>
+
+      <a href="obrazky/img3.jpg">
+        <img src="obrazky/img3.jpg" alt="" />
+      </a>
+
+      <a href="obrazky/img4.webp">
+        <img src="obrazky/img4.webp" alt="" />
+      </a>
+
+      <a href="obrazky/img4.webp">
+        <img src="obrazky/img5.jpg" alt="" />
+      </a>
+
+      <a href="obrazky/img4.webp">
+        <img src="obrazky/img6.jpeg" alt="" />
+      </a>
+    </div>
+    <br />
+    <h1 class="gs2">Galerie 2</h1>
+    <br />
+
+    <div class="gallery">
+      <a href="obrazky/img7.jpeg">
+        <img src="obrazky/img7.jpeg" alt="" />
+      </a>
+
+      <a href="obrazky/img8.jpeg">
+        <img src="obrazky/img8.jpeg" alt="" />
+      </a>
+
+      <a href="obrazky/img11.jpg">
+        <img src="obrazky/img11.jpg" alt="" />
+      </a>
+
+      <a href="obrazky/img22.jpg">
+        <img src="obrazky/img22.jpg" alt="" />
+      </a>
+
+      <a href="obrazky/img33.jpg">
+        <img src="obrazky/img33.jpg" alt="" />
+      </a>
+
+      <a href="obrazky/img44.jpg">
+        <img src="obrazky/img44.jpg" alt="" />
+      </a>
+    </div>
+    <div class="name">Tomáš Gross</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script>
+      lightGallery(document.querySelector(".gallery"));
+    </script>
+    <footer>
+      <div class="tab">
+         <button class="tablinks" onclick="openCity(event, 'xbox')">
+            Xbox
+         </button>
+         <button class="tablinks" onclick="openCity(event, 'PlayStation')">
+            PlayStation
+         </button>
+         <button class="tablinks" onclick="openCity(event, 'PC')">PC</button>
+      </div>
+
+      <div id="xbox" class="tabcontent">
+         <h3>Xbox</h3>
+         <p>Na Xboxu, "Steep" poskytuje hráčům skvělý zážitek díky možnosti hrát na konzoli Xbox One nebo Xbox Series X/S. S využitím exkluzivních funkcí Xbox, jako je například Xbox Live, hráči mohou sdílet své zážitky s přáteli a zapojit se do online soutěží.</p>
+      </div>
+
+      <div id="PlayStation" class="tabcontent">
+         <h3>PlayStation</h3>
+         <p>Na PlayStationu, "Steep" je k dispozici pro hráče na konzolích PlayStation 4 a PlayStation 5. Díky síti PlayStation Network mohou hráči sdílet své úspěchy a soutěžit s ostatními hráči po celém světě.</p>
+      </div>
+
+      <div id="PC" class="tabcontent">
+         <h3>PC</h3>
+         <p>Na PC, "Steep" je dostupný prostřednictvím platformy Ubisoft Connect (dříve Uplay) a také na digitálních distribučních platformách jako je Steam. Hráči na PC mohou využívat širokou škálu možností, jako je možnost používat vlastní herní zařízení, upravitelná grafika a další.</p>
+      </div>
+   </footer>
+  </body>
+</html>

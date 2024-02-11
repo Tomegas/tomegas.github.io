@@ -1,0 +1,201 @@
+body {
+  background-image: url(obrazky/bcf6ff0eaf42f991fafd394219b06689.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  background-color: blue;
+}
+
+nav {
+  background-color: rgba(3, 3, 59, 0.663);
+  box-shadow: 3px 3px 5px black;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 60px;
+}
+nav a {
+  margin-right: 25px;
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.37);
+}
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(0, 21, 139, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px black;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+.ytb1 a {
+  display: flex;
+  justify-content: center;
+}
+
+.ytb1 iframe {
+  width: 1000px;
+  height: 700px;
+}
+
+.brgr {
+  color: azure;
+}
+
+.logo {
+  width: 40px;
+  padding-left: 10px;
+  background-color: none;
+}
+.nadpis,
+.podnadpis {
+  text-align: center;
+  padding: 1%;
+  margin: 0%;
+}
+
+.center {
+  background-color: rgba(211, 212, 217, 0.9);
+}
+
+.logo {
+  align-items: right;
+  float: right;
+  padding-top: 1%;
+  padding-right: 1%;
+}
+
+footer {
+  background-color: rgb(147, 177, 167, 0.8);
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: rgb(61, 90, 128);
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.name {
+  text-align: right;
+  color: black;
+  font-weight: bolder;
+}
+
+iframe {
+  align-items: center;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  flex: 1;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .section {
+    flex-basis: calc(
+      100% - 40px
+    ); /* Each section takes up 100% width with 20px margin on each side */
+  }
+}

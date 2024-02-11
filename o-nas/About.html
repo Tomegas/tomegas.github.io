@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styl.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <header>
+         <nav>
+             
+           <ul class="sidebar">
+               <img class="hideOnMobile" src="obrazky/mountains.png" alt="">
+               <li onclick=hideSidebar()><a href="#"><svg class="brgr"  xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+               <li><a href="/tgss-master/index.html">Home</a></li>
+               <li><a href="/tgss-master/galerie/galerie.html">Gallery</a></li>
+               <li><a href="/tgss-master/o-nas/About.html">About</a></li>
+               <li><a href="/tgss-master/Kontakt/contact.html">Contacts</a></li>
+     
+           </ul>
+           <ul>
+              
+               <li><a href="/tgss-master/index.html"><img class="logo" src="obrazky/mountains.png" alt=""></a></li>
+               <li class="hideOnMobile"><a href="/tgss-master/index.html">Home</a></li>
+               <li class="hideOnMobile"><a href="/tgss-master/galerie/galerie.html">Gallery</a></li>
+               <li class="hideOnMobile"><a href="/tgss-master/o-nas/About.html">About</a></li>
+               <li class="hideOnMobile"><a href="/tgss-master/Kontakt/contact.html">Contacts</a></li>
+               <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+           </ul>
+       </nav>
+     
+     
+     
+       <script>
+           function showSidebar(){
+               const sidebar = document.querySelector('.sidebar')  
+               sidebar.style.display = 'flex'
+           }
+           function hideSidebar(){
+               const sidebar = document.querySelector('.sidebar')  
+               sidebar.style.display = 'none'
+           }
+       </script>
+     </div>
+     </header>
+      <div class="center">
+         <div class="ytb1">
+<a href="" >
+   <iframe
+            class="ytb"
+            src="https://www.youtube.com/watch?v=XznTHeUkGXA"
+            frameborder="0"></iframe>
+</a>
+</div>
+         <div class="container">
+            <section class="section">
+                <h2>O hře Steep</h2>
+                <p>
+                    "Steep" je akční sportovní videohra vyvinutá společností Ubisoft Annecy a vydána společností Ubisoft.
+                    V této hře mají hráči možnost prozkoumávat otevřený svět zasněžených hor, kde mohou provádět různé extrémní sporty, jako je snowboarding, lyžování, paragliding a wingsuit flying.
+                </p>
+            </section>
+        
+            <section class="section">
+                <h2>Prostředí</h2>
+                <img src="obrazky/img8.jpeg" alt="Hory">
+                <p>
+                    Jedním z hlavních prvků hry je možnost volného pohybu v otevřeném světě, který nabízí obrovskou rozlohu hor a různé terény.
+                    Hráči mohou objevovat horské štíty, ledové pláně, lesy a mnoho dalších prostředí, zatímco prozkoumávají různé extrémní sporty.
+                </p>
+            </section>
+        
+            <section class="section">
+                <h2>Multiplayer</h2>
+                <img src="obrazky/img6.jpeg" alt="Multiplayer">
+                <p>
+                    Steep nabízí také možnost multiplayerových závodů a soutěží, kde se hráči mohou utkat s ostatními hráči online nebo se zapojit do společných akcí, jako jsou skupinové výzvy a sestupy.
+                    To přidává další vrstvu zábavy a soutěživosti do hry, která je ideální pro hráče hledající společenské a adrenalinové zážitky.
+                </p>
+            </section>
+
+            <section class="section">
+               <h2>Novinky</h2>
+               <img src="/tgss-master/obrazky/img999.jpg" alt="Novinky">
+               <p>
+                   Zde jsou nejnovější aktualizace a novinky týkající se hry "Steep". Buďte v obraze a sledujte poslední události ve světě extrémních sportů!
+               </p>
+           </section>
+        </div>
+        <div class="name">Tomáš Gross</div>
+      </div>
+
+
+      <footer>
+         <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'xbox')">
+               Xbox
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'PlayStation')">
+               PlayStation
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'PC')">PC</button>
+         </div>
+
+         <div id="xbox" class="tabcontent">
+            <h3>Xbox</h3>
+            <p>Na Xboxu, "Steep" poskytuje hráčům skvělý zážitek díky možnosti hrát na konzoli Xbox One nebo Xbox Series X/S. S využitím exkluzivních funkcí Xbox, jako je například Xbox Live, hráči mohou sdílet své zážitky s přáteli a zapojit se do online soutěží.</p>
+          </div>
+    
+          <div id="PlayStation" class="tabcontent">
+            <h3>PlayStation</h3>
+            <p>Na PlayStationu, "Steep" je k dispozici pro hráče na konzolích PlayStation 4 a PlayStation 5. Díky síti PlayStation Network mohou hráči sdílet své úspěchy a soutěžit s ostatními hráči po celém světě.</p>
+          </div>
+    
+          <div id="PC" class="tabcontent">
+            <h3>PC</h3>
+            <p>Na PC, "Steep" je dostupný prostřednictvím platformy Ubisoft Connect (dříve Uplay) a také na digitálních distribučních platformách jako je Steam. Hráči na PC mohou využívat širokou škálu možností, jako je možnost používat vlastní herní zařízení, upravitelná grafika a další.</p>
+          </div>
+      </footer>
+   </div>
+      <script src="script.js"></script>
+   </body>
+</html>
