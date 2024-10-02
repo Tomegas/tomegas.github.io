@@ -1,0 +1,71 @@
+
+body {
+    background-color: rgb(21, 169, 214);
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+}
+
+.Name {
+    margin: 0;
+    margin-bottom: 15px;
+    color: black;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #000000;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.Menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Menu li {
+    margin: 0 20px;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+
+}
+
+.Menu a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.gallery img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
